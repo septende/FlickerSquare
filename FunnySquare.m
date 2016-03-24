@@ -1,6 +1,4 @@
-# FlickerSquare
-
- function [ timeUse,keyUse ] = FlickerDisplay( window,resolusion, Hz, displaytime, screenNumber )
+function [ timeUse,keyUse ] = FlickerDisplay( window,resolusion, Hz, displaytime, screenNumber )
 Screen('Flip',window);
 RefreshRate=Screen('GetFlipInterval',window);
 TotalFrames=round(displaytime/RefreshRate); % total frames within total display time
